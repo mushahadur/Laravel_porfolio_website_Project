@@ -8,3 +8,5 @@ use App\Http\Controllers\ServicesController;
 Route::get('/', [HomeController::class, 'homeIndex'])->name('home');
 Route::get('/visitors-info', [VisitorController::class, 'visitorIndex'])->name('visitors');
 Route::get('/services', [ServicesController::class, 'serviceIndex'])->name('services');
+Route::get('/getServicesData', [ServicesController::class, 'getServicesData']);
+Route::post('/serviceDelete', [ServicesController::class, 'serviceDelete']);

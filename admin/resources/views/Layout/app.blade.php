@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('/')}}assets/css/datatables-select.min.css">
 </head>
 <body class="fix-header fix-sidebar">
-    
+
 @include('Layout.menu')
 
 @yield('content')
@@ -24,7 +24,7 @@
     <script src="{{asset('/')}}assets/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="{{asset('/')}}assets/js/popper.min.js"></script>
     <script type="text/javascript" src="{{asset('/')}}assets/js/bootstrap.js"></script>
-    <script type="text/javascript" src="{{asset('/')}}assets/js/mdb.min.js"></script>
+    <script type="text/javascript" src="{{asset('/')}}assets/upJs/mdb.min.js"></script>
     <script src="{{asset('/')}}assets/js/jquery.slimscroll.js"></script>
     <script src="{{asset('/')}}assets/js/sidebarmenu.js"></script>
     <script src="{{asset('/')}}assets/js/sticky-kit.min.js"></script>
@@ -33,6 +33,8 @@
     <script src="{{asset('/')}}assets/js/datatables-select.min.js"></script>
     <script src="{{asset('/')}}assets/js/custom.js"></script>
     <script src="{{asset('/')}}assets/js/axios.min.js"></script>
+
+    @yield('script')
 
 </body>
 </html>
